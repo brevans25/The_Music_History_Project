@@ -1,1 +1,53 @@
+/*//EXPERIMENTING SLIDES//*/
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+//mixins
+@mixin bp($bp, $min-max: min-width) {
+    $em: $bp/16;
+    @media(#{$min-max}: #{$em}em) {
+        @content;
+    }
+}
 
+html {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+*,
+*:before,
+*:after  { box-sizing: inherit; }
+
+h1, h3 {
+    color: #fff;
+    font-family: "Audiowide", cursive;
+    font-size: 2em;
+    font-size: 6vw;
+    line-height: 1.2;
+    margin: 0.5em 0 3em;
+    text-shadow: 1px 1px 1px #333;
+}
+
+@include bp(1075) { h1 { font-size: 4em; } }
+
+
+/*//FOR FLEXBOX IN THE FUTURE//*/
+/*.container {
+	padding: 10px;
+	/*background: blue;
+  border-radius: 5px;
+	margin: 45px auto;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+/*
+.item {
+	display: block;
+  width: 50%;
+  height: 50%;
+  margin: 20px auto;
+  margin: 5px
+}
+*/
+/*
