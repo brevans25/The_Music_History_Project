@@ -1,7 +1,11 @@
-/*.container {
-  background-color: #F58056;
-  width:auto;
+/*.nav-bar {
+  background-color: #D9FFC5;
+  color: #400000;
+  cursor: pointer;
+  line-height: 4.25em;
+  font-size: 6em;
+  padding: 0 5em;
+  width:100%;
   height:auto;
-  display: inline-flex;
-}
-*/
+  display: inline-block;
+}*/

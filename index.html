@@ -8,12 +8,14 @@
   </head>
 
   <body>
-    <h1>The Music History Project</h1>
-    <h3>An incredible journey through History with Music</h3>
-
-    <div class="wrap">
+    <header>
+      <div class="nav-bar">
+        <div class="top-header">
+        <h1>The Music History Project</h1>
+          <h3>An incredible journey through History with Music</h3>
+        </div>
       <!--///// THIS IS MY NAVIGATION BAR /////-->
-      <header>
+      <div class="labels">
         <label for="slide1-trigger">Medieval</label>
         <label for="slide2-trigger">Renaissance</label>
         <label for="slide3-trigger">Baroque</label>
@@ -22,18 +24,20 @@
         <label for="slide6-trigger">Impressionism</label>
         <label for="slide7-trigger">XX Century</label>
         <label for="slide8-trigger">XXI Century</label>
+      </div>
       </header>
 
       <!--///// THESE ARE MY SLIDES /////-->
-      <input id="slide1-trigger" type="radio" name="slides" checked>
-      <section class="slide slide-one">
-        <h1>Medieval</h1>
-      </section>
-      <input id="slide2-trigger" type="radio" name="slides">
-      <section class="slide slide-two">
-        <h1>Renaissance</h1>
-      </section>
-      <input id="slide3-trigger" type="radio" name="slides">
+      <div class="content">
+        <input id="slide1-trigger" type="radio" name="slides" checked>
+          <section class="slide slide-one">
+          <h1>Medieval</h1>
+          </section>
+        <input id="slide2-trigger" type="radio" name="slides">
+          <section class="slide slide-two">
+          <h1>Renaissance</h1>
+          </section>
+        <input id="slide3-trigger" type="radio" name="slides">
       <section class="slide slide-three">
         <h1>Baroque</h1>
       </section>
@@ -58,7 +62,7 @@
         <h1>XXI Century</h1>
       </section>
     </div>
-
+    </div>
 <!--FOR FLEXBOX IN THE FUTURE-->
   <!--  <div class="container">
 		<img src="img/Medieval.jpg" alt="Medieval Painting" title="Altar Frontal with Christ in Majesty and the Life of Saint Martin, by unknown Spanish Artist (1250)" class="Medieval item">
