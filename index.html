@@ -2,7 +2,11 @@
 <html>
   <head>
     <title>A Music History</title>
-      <!--<link rel="stylesheet" href="css/style.css">-->
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/jquery.fullPage.js"></script>
+      <link rel="stylesheet" href="css/jquery.fullPage.css"
+    </head>
       <!--<link rel="stylesheet" href="css/flexbox.css">-->
       <!--<link rel="stylesheet" href="css/horizontal.css">-->
   </head>
@@ -13,16 +17,57 @@
       <h3>An incredible journey through History with Music</h3>-->
     </header>
     <main>
+    <div id="navbar">
+      <a href="#Medieval">Medieval</a>
+      <a href="#Medieval/Renaissance">Renaissance</a>
+      <a href="#Medieval/Baroque">Baroque</a>
+      <a href="#Medieval/Classical">Classical</a>
+      <a href="#Medieval/Romantic">Romantic</a>
+      <a href="#Medieval/Impressionism">Impressionism</a>
+      <a href="#Medieval/XX_Century">XX Century</a>
+      <a href="#Medieval/XXI_Century">XXI Century</a>
+    </div>
+    <div id="wrapper">
+      <div class="section" data-anchor="Medieval">
+        <div class="slide">
+          <img src="img/Medieval.jpg">
+          <!-- alt="Medieval Painting" title="Altar Frontal with Christ in Majesty and the Life of Saint Martin, by unknown Spanish Artist (1250)" class="Medieval item">-->
+        </div>
+        <div class="slide" data-anchor="Renaissance">
+          <img src="img/Renaissance.jpg">
+          <!--alt="Renaissance Painting" title="Philosophy (School of Athens), by Raphael (1510)" class="Renaissance item">-->
+        </div>
+        <div class="slide" data-anchor="Baroque">
+          <img src="img/Baroque.jpg">
+          <!--alt="Baroque Painting" title="The triumph of the Immaculate, by Paolo de Matteis (1715)" class="Baroque item">-->
+        </div>
+        <div class="slide" data-anchor="Classical">
+          <img src="img/Classicism.jpg">
+          <!--alt="Classical Painting" title="Cupid Disarmed, by François Boucher (1751)" class="Classicism item">-->
+        </div>
+        <div class="slide" data-anchor="Romantic">
+          <img src="img/Romanticism.jpg">
+          <!--alt="Romantic Painting" title="The Voyage of Life Youth, by Erastus Salisbury Field (1842)" class="Romanticism item">-->
+        </div>
+        <div class="slide" data-anchor="Impressionism">
+          <img src="img/Impressionism.jpg">
+          <!--alt="Impressionistic Painting" title="Port of Dieppe - Evening, by Claude Monet (1882)" class="Impressionism item">-->
+        </div>
+        <div class="slide" data-anchor="XX_Century">
+          <img src="img/XXCentury.jpg">
+          <!--alt="XX Century Art" title="Composition with Red Blue and Yellow, by Piet Mondrian (1930)" class="XXCentury item">-->
+        </div>
+        <div class="slide" data-anchor="XXI_Century">
+          <img src="img/XXICentury.jpg">
+          <!--alt="XXI Century Art" title="XXI. century, by MEIL Ildiko Mecseri (2012)" class="XXICentury item">-->
+        </div>
+      </div>
 
-		<img src="img/Medieval.jpg" alt="Medieval Painting" title="Altar Frontal with Christ in Majesty and the Life of Saint Martin, by unknown Spanish Artist (1250)" class="Medieval item">
-		<img src="img/Renaissance.jpg" alt="" title="Philosophy (School of Athens), by Raphael (1510)" class="Renaissance item">
-    <img src="img/Baroque.jpg" alt="Baroque Painting" title="The triumph of the Immaculate, by Paolo de Matteis (1715)" class="Baroque item">
-		<img src="img/Classicism.jpg" alt="Classical Painting" title="Cupid Disarmed, by François Boucher (1751)" class="Classicism item">
-		<img src="img/Romanticism.jpg" alt="Romantic Painting" title="The Voyage of Life Youth, by Erastus Salisbury Field (1842)" class="Romanticism item">
-		<img src="img/Impressionism.jpg" alt="Impressionistic Painting" title="Port of Dieppe - Evening, by Claude Monet (1882)" class="Impressionism item">
-		<img src="img/XXCentury.jpg" alt="XX Century Art" title="Composition with Red Blue and Yellow, by Piet Mondrian (1930)" class="XXCentury item">
-    <img src="img/XXICentury.jpg" alt="XXI Century Art" title="XXI. century, by MEIL Ildiko Mecseri (2012)" class="XXICentury item">
-
+    <script>
+    $(document).ready(function() {
+      $("#wrapper").fullpage();
+    });
+    </script>
 </main>
   </body>
 

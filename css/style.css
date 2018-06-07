@@ -1,1 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
 
+a {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0.5em 0 3em;
+  text-shadow: 1px 1px 1px #333;
+  text-decoration: none;
+  color: white;
+  padding: 0 1em;
+}
+
+#navbar {
+  width: 100%;
+  height: 50px;
+  top: 0px;
+  position: absolute;
+  z-index: 999;
+  background-color: #D9FFC5;
+  opacity: 1;
+}
+div img {
+  width: 1600px;
+  height: auto;
+}
