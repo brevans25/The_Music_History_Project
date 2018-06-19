@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Music History</title>
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="css/nav.css">
+      <link rel="stylesheet" href="css/base.css">
+      <!--<link rel="stylesheet" href="css/theHistory.css">-->
+      <link rel="stylesheet" href="css/flipster.css">
+    </head>
+
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <a class="site-logo" href="/">
+          <img src="img/site-logo.svg" alt="Bach Seal" width="100%" height="100%">
+        </a>
+
+        <ul class="nav">
+          <li><a href="index2.html">Home</a></li>
+          <li><a href="theHistory.html">The History</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Research</a></li>
+        </ul>
+
+		<!-- start header	-->
+      </header>
+		<!-- end header	-->
+
+      <div class="my-flipster">
+        <ul>
+          <li><img src="img/Medieval.jpg"></li>
+          <li><img src="img/Renaissance.jpg"></li>
+          <li><img src="img/Baroque.jpg"></li>
+          <li><img src="img/Classicism.jpg"></li>
+          <li><img src="img/Romanticism.jpg"></li>
+          <li><img src="img/Impressionism.jpg"></li>
+          <li><img src="img/XXCentury.jpg"></li>
+          <li><img src="img/XXICentury.jpg"></li>
+      </ul>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.flipster.min.js"></script>
+    <script>
+        $('.my-flipster').flipster();
+
+    </script> <!--Got stuck here-->
+  </body>
