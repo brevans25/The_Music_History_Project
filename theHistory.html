@@ -6,7 +6,11 @@
       <link rel="stylesheet" href="css/nav.css">
       <link rel="stylesheet" href="css/base.css">
       <!--<link rel="stylesheet" href="css/theHistory.css">-->
-      <link rel="stylesheet" href="css/flipster.css">
+      <link rel="stylesheet" href="css/jquery.flipster.min.css">
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.flipster.min.js"></script>
+
     </head>
 
   <body>
@@ -28,24 +32,60 @@
 		<!-- start header	-->
       </header>
 		<!-- end header	-->
+        <div id="carousel">
+            <ul class="flip-items">
+                <li>
+                    <img src="img/text1.jpg">
+                </li>
+                <li>
+                    <img src="img/text2.jpg">
+                 </li>
+                <li>
+                    <img src="img/text3.jpg">
+                </li>
+                <li>
+                    <img src="img/text4.jpg">
+                </li>
+                <li>
+                    <img src="img/text5.jpg">
+                </li>
+                <li>
+                    <img src="img/text6.jpg">
+                </li>
+                <li>
+                    <img src="img/text7.jpg">
+                </li>
+                <li>
+                    <img src="img/text8.jpg">
+                </li>
+              <!--  <li data-flip-title="Deep Sea" data-flip-category="Greens">
+                    <img src="img/text9.gif">
+                </li>
+                <li data-flip-title="Apple" data-flip-category="Greens">
+                    <img src="img/text10.gif">
+                </li>
+                <li data-flip-title="Pistachio" data-flip-category="Greens">
+                    <img src="img/text11.gif">
+                </li>
+                <li data-flip-title="Pear" data-flip-category="Greens">
+                    <img src="img/text12.gif">
+                </li>
+                <li data-flip-title="Bright Sun" data-flip-category="Yellows">
+                    <img src="img/text13.gif">
+                </li>
+                <li data-flip-title="Mikado" data-flip-category="Yellows">
+                    <img src="img/text14.gif">
+                </li>-->
+            </ul>
+        </div>
 
-      <div class="my-flipster">
-        <ul>
-          <li><img src="img/Medieval.jpg"></li>
-          <li><img src="img/Renaissance.jpg"></li>
-          <li><img src="img/Baroque.jpg"></li>
-          <li><img src="img/Classicism.jpg"></li>
-          <li><img src="img/Romanticism.jpg"></li>
-          <li><img src="img/Impressionism.jpg"></li>
-          <li><img src="img/XXCentury.jpg"></li>
-          <li><img src="img/XXICentury.jpg"></li>
-      </ul>
-      </div>
-    </div>
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.flipster.min.js"></script>
     <script>
-        $('.my-flipster').flipster();
-
-    </script> <!--Got stuck here-->
+        var carousel = $("#carousel").flipster({
+            start: 0,
+            style: 'carousel',
+            spacing: -0.5,
+            nav: false,
+            buttons: false,
+        });
+    </script>
   </body>

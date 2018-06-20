@@ -34,6 +34,12 @@ a {
 	margin: auto;
 }
 
+#carousel {
+  padding-top: 20px;
+  overflow: hidden;
+
+
+}
 /* --------------------------
   Media Queries
 --------------------------- */

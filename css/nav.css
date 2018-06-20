@@ -36,6 +36,26 @@
   color: #2E2E30;
   border-bottom-color: #F79E2A;
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-container {
+  display: none;
+}
+
+.dropdown:hover .dropdown-container {
+  display: block;
+  position: absolute;
+  top: 100%;
+/*  background: #D4D3D9;*/
+  opacity: 0.5;
+}
+
+.dropdown .dropdown-container li {
+  display: block;
+}
 /* --------------------------
   Media Queries
 --------------------------- */
