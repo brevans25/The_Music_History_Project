@@ -5,12 +5,7 @@
       <meta name="viewport" content="width=device-width">
       <link rel="stylesheet" href="css/nav.css">
       <link rel="stylesheet" href="css/base.css">
-      <!--<link rel="stylesheet" href="css/theHistory.css">-->
-      <link rel="stylesheet" href="css/jquery.flipster.min.css">
-
-      <script src="js/jquery.min.js"></script>
-      <script src="js/jquery.flipster.min.js"></script>
-
+      <link rel="stylesheet" href="css/flickity.css" media="screen">
     </head>
 
   <body>
@@ -28,64 +23,86 @@
           <li><a href="#">Contact</a></li>
           <li><a href="#">Research</a></li>
         </ul>
-
-		<!-- start header	-->
       </header>
-		<!-- end header	-->
-        <div id="carousel">
-            <ul class="flip-items">
-                <li>
-                    <img src="img/text1.jpg">
-                </li>
-                <li>
-                    <img src="img/text2.jpg">
-                 </li>
-                <li>
-                    <img src="img/text3.jpg">
-                </li>
-                <li>
-                    <img src="img/text4.jpg">
-                </li>
-                <li>
-                    <img src="img/text5.jpg">
-                </li>
-                <li>
-                    <img src="img/text6.jpg">
-                </li>
-                <li>
-                    <img src="img/text7.jpg">
-                </li>
-                <li>
-                    <img src="img/text8.jpg">
-                </li>
-              <!--  <li data-flip-title="Deep Sea" data-flip-category="Greens">
-                    <img src="img/text9.gif">
-                </li>
-                <li data-flip-title="Apple" data-flip-category="Greens">
-                    <img src="img/text10.gif">
-                </li>
-                <li data-flip-title="Pistachio" data-flip-category="Greens">
-                    <img src="img/text11.gif">
-                </li>
-                <li data-flip-title="Pear" data-flip-category="Greens">
-                    <img src="img/text12.gif">
-                </li>
-                <li data-flip-title="Bright Sun" data-flip-category="Yellows">
-                    <img src="img/text13.gif">
-                </li>
-                <li data-flip-title="Mikado" data-flip-category="Yellows">
-                    <img src="img/text14.gif">
-                </li>-->
-            </ul>
-        </div>
+    </div>
+
+    <div id="carousel">
+      <div class="box" "carousel-cell">
+        <figure>
+          <img src="img/text1.jpg">
+          <figcaption>
+            <h1>Medieval</h1>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="box" "carousel-cell">
+        <figure>
+          <img src="img/text2.jpg">
+          <figcaption>
+            <h1>Renaissance</h1>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="box" "carousel-cell">
+        <figure>
+          <img src="img/text3.jpg">
+          <figcaption>
+            <h1>Baroque</h1>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="box" "carousel-cell">
+        <figure>
+          <img src="img/text4.jpg">
+          <figcaption>
+            <h1>Classical</h1>
+          </figcaption>
+        </figure>
+      </div>
+      <li class= "box">
+        <figure>
+          <img src="img/text5.jpg">
+          <figcaption>
+            <h1>Romantic</h1>
+          </figcaption>
+        </figure>
+      </li>
+      <div class="box" "carousel-cell">
+        <figure>
+          <img src="img/text6.jpg">
+          <figcaption>
+            <h1>Impressionism</h1>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="box" "carousel-cell">
+        <figure>
+          <img src="img/text7.jpg">
+          <figcaption>
+            <h1>20th Century</h1>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="box" "carousel-cell">
+        <figure>
+          <img src="img/text8.jpg">
+          <figcaption>
+            <h1>21st Century</h1>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
 
     <script>
-        var carousel = $("#carousel").flipster({
-            start: 0,
-            style: 'carousel',
-            spacing: -0.5,
-            nav: false,
-            buttons: false,
-        });
-    </script>
+    $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+  </script>
+
   </body>

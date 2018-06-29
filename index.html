@@ -2,78 +2,37 @@
 <html>
   <head>
     <title>A Music History</title>
-      <link rel="stylesheet" href="css/style.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="js/jquery.fullPage.js"></script>
-      <link rel="stylesheet" href="css/jquery.fullPage.css">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="css/nav.css">
+      <link rel="stylesheet" href="css/base.css">
     </head>
-      <!--<link rel="stylesheet" href="css/flexbox.css">-->
-      <!--<link rel="stylesheet" href="css/horizontal.css">-->
 
 
   <body>
-    <header>
-      <div id="container">
-        <div id="top-header">
-          <h1>The Music History Project<h1>
-          <h3>An incredible journey through History with Music</h3>
-        </div>
-      <div id="navbar">
-        <a href="#Medieval">Medieval</a>
-        <a href="#Medieval/Renaissance">Renaissance</a>
-        <a href="#Medieval/Baroque">Baroque</a>
-        <a href="#Medieval/Classical">Classical</a>
-        <a href="#Medieval/Romantic">Romantic</a>
-        <a href="#Medieval/Impressionism">Impressionism</a>
-        <a href="#Medieval/XX_Century">XX Century</a>
-        <a href="#Medieval/XXI_Century">XXI Century</a>
-      </div>
+    <div class="container">
+      <header class="main-header">
+        <a class="site-logo" href="/">
+          <img src="img/site-logo.svg" alt="Bach Seal" width="100%" height="100%">
+        </a>
+
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="flickitytest.html">The History</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Research</a></li>
+        </ul>
+
+		<!-- start header	-->
+      </header>
     </div>
-    </header>
-    <main>
-    <div id="wrapper">
-      <div class="section" data-anchor="Medieval">
-        <div class="slide">
-          <img src="img/Medieval.jpg">
-          <!-- alt="Medieval Painting" title="Altar Frontal with Christ in Majesty and the Life of Saint Martin, by unknown Spanish Artist (1250)" class="Medieval item">-->
-        </div>
-        <div class="slide" data-anchor="Renaissance">
-          <img src="img/Renaissance.jpg">
-          <!--alt="Renaissance Painting" title="Philosophy (School of Athens), by Raphael (1510)" class="Renaissance item">-->
-        </div>
-        <div class="slide" data-anchor="Baroque">
-          <img src="img/Baroque.jpg">
-          <!--alt="Baroque Painting" title="The triumph of the Immaculate, by Paolo de Matteis (1715)" class="Baroque item">-->
-        </div>
-        <div class="slide" data-anchor="Classical">
-          <img src="img/Classicism.jpg">
-          <!--alt="Classical Painting" title="Cupid Disarmed, by François Boucher (1751)" class="Classicism item">-->
-        </div>
-        <div class="slide" data-anchor="Romantic">
-          <img src="img/Romanticism.jpg">
-          <!--alt="Romantic Painting" title="The Voyage of Life Youth, by Erastus Salisbury Field (1842)" class="Romanticism item">-->
-        </div>
-        <div class="slide" data-anchor="Impressionism">
-          <img src="img/Impressionism.jpg">
-          <!--alt="Impressionistic Painting" title="Port of Dieppe - Evening, by Claude Monet (1882)" class="Impressionism item">-->
-        </div>
-        <div class="slide" data-anchor="XX_Century">
-          <img src="img/XXCentury.jpg">
-          <!--alt="XX Century Art" title="Composition with Red Blue and Yellow, by Piet Mondrian (1930)" class="XXCentury item">-->
-        </div>
-        <div class="slide" data-anchor="XXI_Century">
-          <img src="img/XXICentury.jpg">
-          <!--alt="XXI Century Art" title="XXI. century, by MEIL Ildiko Mecseri (2012)" class="XXICentury item">-->
-        </div>
-      </div>
-
-    <script>
-    $(document).ready(function() {
-      $("#wrapper").fullpage();
-    });
-    </script>
-</main>
+		<!-- end header	-->
+/
+    <div class="main-content">
+      <h1>The Music History Project<h1>
+      <h3>An incredible journey through History with Music</h3>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis lobortis quam id venenatis. Integer eget pulvinar elit. Nunc magna mauris, sollicitudin eget ex quis, sagittis pretium velit. Morbi eget tortor vel massa iaculis tincidunt in eget nunc. Curabitur ornare faucibus fringilla. Praesent magna neque, auctor ac euismod sed, suscipit sed lorem. Curabitur euismod tellus et nibh condimentum mollis. Phasellus eleifend semper augue, ut feugiat orci fringilla non. Cras vel ultricies eros. Sed sed ante a ante gravida efficitur quis non dui. Fusce sagittis ullamcorper metus et tempus.<br></p>
+    <a href="theHistory.html">Take me there!</a></p>
+   </div>
   </body>
-
-
-</html>

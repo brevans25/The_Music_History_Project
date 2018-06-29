@@ -1,0 +1,143 @@
+/* --------------------------
+  Base Styles
+--------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #797e83;
+  font-size: 16px;
+  font-family: 'Cinzel', serif;
+  line-height: 1.5;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: #656a6e;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+
+/* --------------------------
+  Main Styles
+--------------------------- */
+.container {
+  max-width: 1300px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+  main {
+    margin:.5vw;
+    /*font-size: 0;*/
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    display: -webkit-box;
+    display:flex;
+  }
+
+  main div {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 300px;
+    margin: .5vw;
+  }
+
+  main div img {
+    width: 100%;
+    height: auto;
+  }
+
+  img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+/* FIGCAPTION EDITS*/
+
+figure {
+    width: 100%;
+    margin: auto;
+    color: red;
+    position: relative;
+  }
+
+figure img {
+  margin: auto;
+}
+figcaption {
+    color: black;
+    display: block;
+    width: 100%;
+    position: absolute;
+}
+
+  figcaption h1 {
+      margin: 0;
+      background: azure;
+      margin-top: -87px;
+      padding: 20px 10px;
+  }
+
+  figure {
+      display: block;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 40px;
+      -webkit-margin-end: 40px;
+
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+@media screen and (max-width: 400px) {
+  main div {
+    margin: 0;
+  }
+
+  main {
+    padding: 0;
+  }
+}
+
+@media (min-width: 769px) {
+	.main-content {
+		margin-top: 4em;
+	}
+
+	p {
+		-webkit-column-count: 2;
+		-webkit-column-gap: 2.5em;
+
+		-moz-column-count: 2;
+		-moz-column-gap: 2.5em;
+
+		column-count: 2;
+		column-gap: 2.5em;
+	}
+}
+
+@media (min-width: 1200px) {
+
+}
