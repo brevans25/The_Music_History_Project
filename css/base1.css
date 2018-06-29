@@ -33,12 +33,6 @@ a {
 /* --------------------------
   Main Styles
 --------------------------- */
-.container {
-  max-width: 1300px;
-  justify-content: center;
-  margin: 0 auto;
-  width: 100%;
-}
 
   main {
     margin:.5vw;
@@ -73,40 +67,6 @@ a {
     backface-visibility: hidden;
   }
 
-/* FIGCAPTION EDITS*/
-
-figure {
-    width: 100%;
-    margin: auto;
-    color: red;
-    position: relative;
-  }
-
-figure img {
-  margin: auto;
-}
-figcaption {
-    color: black;
-    display: block;
-    width: 100%;
-    position: absolute;
-}
-
-  figcaption h1 {
-      margin: 0;
-      background: azure;
-      margin-top: -87px;
-      padding: 20px 10px;
-  }
-
-  figure {
-      display: block;
-      -webkit-margin-before: 1em;
-      -webkit-margin-after: 1em;
-      -webkit-margin-start: 40px;
-      -webkit-margin-end: 40px;
-
-
 /* --------------------------
   Media Queries
 --------------------------- */
@@ -122,9 +82,6 @@ figcaption {
 }
 
 @media (min-width: 769px) {
-	.main-content {
-		margin-top: 4em;
-	}
 
 	p {
 		-webkit-column-count: 2;
@@ -139,5 +96,10 @@ figcaption {
 }
 
 @media (min-width: 1200px) {
-
+  .container {
+    max-width: 1300px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
