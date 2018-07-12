@@ -1,19 +1,31 @@
 /* --------------------------
   Main Styles
 --------------------------- */
-.main-header,
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700&subset=latin-ext');
+
+.container,
 .nav {
   display: flex;
   flex-direction: column;
 }
 
 .main-header {
+  /* border: 3px solid coral; */
   padding-top: 2em;
+  /* background-color: #FFD648; */
 }
 
 .site-logo {
   width: 120px;
   align-self: center;
+  /* border: 3px solid coral; */
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .nav {
@@ -23,7 +35,7 @@
 .nav a {
   display: block;
   color: #727A7C;
-  font-style: 1.125em;
+  font-size: 1em;
   font-weight: 300;
   text-align: center;
   padding: .4em;
@@ -63,13 +75,19 @@
     flex-direction: row;
   }
 
+  .container{
+   justify-content: center;
+  }
+
   .site-logo {
     margin-right: auto;
+    margin-left: 2em;
   }
 
   .nav {
+    justify-content: flex-end;
     margin-top: 0;
-    align-self: center;
+    
   }
 
   .nav li {

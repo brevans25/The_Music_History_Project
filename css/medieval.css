@@ -1,53 +1,129 @@
-@import url(https://fonts.googleapis.com/css?family=Cinzel);
+/* --------------------------
+  Main Styles
+--------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700&subset=latin-ext');
 
 * {
   box-sizing: border-box;
 }
 
-body {
+.main-header,
+.main-content, 
+.main-footer {
   color: #797e83;
-  font-size: 16px;
+  font-size: 1em;
 	margin: 0;
   font-family: 'Cinzel', serif;
   line-height: 1.5;
 }
 
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-a {
-  color: #656a6e;
-  text-decoration: none;
-  font-weight: 400;
-}
-
 .main-content {
+  color: #656a6e;
+  /* background-color: rgb(87, 165, 201); */
+  padding: 40px;
+  /* border: 3px solid green; */
+}
+
+/* .main-content h1 {
+  font-size: 2em;
+} */
+
+.main-content p {
+  margin-bottom: 2em;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column; 
+  margin: .5em;
+}
+
+.first-paragraph,
+.second-paragraph,
+.Leonin,
+.Perotin {
+  text-align: justify;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+figcaption {
+  font-size: .75em;
+}
+
+.main-footer {
+  /* background-color: #88FFBF; */
+  padding-top: 1em;
+  text-align: center;
+}
+
+/* --------------------------
+  Borders
+--------------------------- */
+
+/* .intro,
+.composers {
+  border: solid 5px #2275;
+} */
+
+/* .title,
+.first-paragraph,
+.second-paragraph,
+.Leonin,
+.Perotin,
+.image {
+  border: dotted 4px #657245; */
+
+
+/* --------------------------
+  Flexbox Properties
+--------------------------- */
+
+.notre-dame, 
+.composers,
+.intro {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 
-.main-content img {
+.notre-dame img{
   width: 100%;
-  height: auto;
 }
+
+/* .composers img {
+  align-items: center;
+} */
 
 /* --------------------------
   Media Queries
 --------------------------- */
 
 @media (min-width: 769px) {
-
+  .main-content {
+    margin-top: 3em;
+  }
 }
 
 @media (min-width: 1080px) {
-  .main-content img {
-    max-width: 540px;
-    height: auto;
+  .main-content {
+    max-width: 1300px;
+    justify-content: center;
+    margin: 3em auto;
+    width: 100%;
+  }
+
+  .intro,
+  .composers {
+    flex-direction: row;
+    height: 450px;
+  }
+
+  .paragraphs {
+    flex-direction: row;
+  }
+
+  .intro {
+    align-items: flex-end; /*align-items => align on the Cross Axis (up-down the container) => flex-end => bottom of container*/
+  }
 }
 
-}
