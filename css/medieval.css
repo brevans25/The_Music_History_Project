@@ -61,19 +61,6 @@ figcaption {
   Borders
 --------------------------- */
 
-/* .intro,
-.composers {
-  border: solid 5px #2275;
-} */
-
-/* .title,
-.first-paragraph,
-.second-paragraph,
-.Leonin,
-.Perotin,
-.image {
-  border: dotted 4px #657245; */
-
 
 /* --------------------------
   Flexbox Properties
@@ -100,7 +87,7 @@ figcaption {
 
 @media (min-width: 769px) {
   .main-content {
-    margin-top: 3em;
+    margin-top: 2em;
   }
 }
 
@@ -115,7 +102,7 @@ figcaption {
   .intro,
   .composers {
     flex-direction: row;
-    height: 450px;
+    height: 400px;
   }
 
   .paragraphs {

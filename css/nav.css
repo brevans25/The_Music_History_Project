@@ -10,15 +10,15 @@
 }
 
 .main-header {
-  /* border: 3px solid coral; */
+  background-color: #FFBBB9;
+  border: solid 2px #FDCD15;
   padding-top: 2em;
-  /* background-color: #FFD648; */
+  font-family: 'Cinzel', serif;
 }
 
 .site-logo {
   width: 120px;
   align-self: center;
-  /* border: 3px solid coral; */
 }
 
 ul,
@@ -54,7 +54,7 @@ li {
 
 @media (min-width: 769px) {
   .main-header {
-    height: 200px;
+    height: 250px;
     justify-content: flex-end;
   }
   .site-logo {
@@ -76,7 +76,7 @@ li {
   }
 
   .container{
-   justify-content: center;
+   /* justify-content: center; */
   }
 
   .site-logo {
