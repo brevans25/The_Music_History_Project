@@ -1,0 +1,131 @@
+/* --------------------------
+  Web Fonts
+--------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i');
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* --------------------------
+  Main Styles
+--------------------------- */
+
+main {
+
+}
+
+form {
+    max-width: 350px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.827rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    /* background-color: #A2E8B0;
+    border: solid 2px #FB005A; */
+}
+
+span {
+    font-family: 'Alegreya', serif;
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 1.6;
+    text-align: justify;
+    
+    /* background-color: #FFF1B9;
+    border: solid 2px #007BFD;  */
+}
+
+label {
+    font-family: 'Cinzel', serif;
+    font-size: 1.414em;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: solid 1px gray;
+  border-radius: 3px;
+  font-size: 1.25rem;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+button {
+    color: #797e83;
+    font-size: 1.425em;
+    font-family: 'Cinzel', serif;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    padding: 19px 39px 18px 39px;
+    border: solid 1px gray;
+    border-radius: 3px;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }
+
+  button:hover {
+    color: #2E2E30;
+    border-bottom: 3px solid #F79E2A;
+  }
+  
+  #confirmation {
+    color: #797e83;
+    font-size: 1.425em;
+    font-family: 'Cinzel', serif;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    padding: 19px 39px 18px 39px;
+    border: solid 1px #F79E2A;
+    border-radius: 3px;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }
+  
+/* --------------------------
+ Media Queries
+--------------------------- */
+
+
+@media screen and (min-width: 480px) {
+
+    form {
+      max-width: 480px;
+      margin: 0;
+    }
+  
+  }
