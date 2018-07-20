@@ -10,9 +10,9 @@
 }
 
 .main-header {
-  background-color: #FFBBB9;
-  border: solid 2px #FDCD15;
-  padding-top: 2em;
+  /* background-color: #FFBBB9;
+  border: solid 2px #FDCD15; */
+  padding-top: 1em;
   font-family: 'Cinzel', serif;
 }
 
