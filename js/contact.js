@@ -38,7 +38,7 @@ var comment = $('#comment').val();
     } else {
     $('#userName').text(name.toUpperCase());
     $('#confirmation').slideDown(1000);
-    $('#confirmation').delay(3000);
+    $('#confirmation').delay(15000);
     $('#confirmation').slideUp();
     }
 });
