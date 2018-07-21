@@ -6,76 +6,93 @@
       <link rel="stylesheet" href="../css/normalize.css">
       <link rel="stylesheet" href="../css/nav.css">
       <link rel="stylesheet" href="../css/medieval.css">
+      <link rel="stylesheet" href="http://basehold.it/32">
   </head>
 
   <body>
-    <header class="main-header">
-      <div class="container">
-        <a class="site-logo" href="../index.html">
-          <img src="../img/site-logo.svg" alt="Bach Seal">
-        </a>
-        <ul class="nav">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="html/overlay.html">The History</a></li>
-          <li><a href="#">Media</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </header>
+    <div class="wrap">
+      <header class="main-header">
+        <div class="container">
+          <a class="site-logo" href="../index.html">
+            <img src="../img/site-logo.svg" alt="Bach Seal">
+          </a>
+          <ul class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="overlay.html">The History</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
 
-    <!-- MAIN START -->
+      <!-- MAIN START -->
 
-    <main class="main-content">
-        <h1>Pre and Early Medieval (800 - 1450)</h1>
+      <main class="main-content">
+        <h1 class="title medieval-title">Pre and Early Medieval</h1>
+         <span class="subtitle">(800 - 1450)</span>
           <div class="paragraphs"><!-- This is a flex container -->
-            <div class=first-paragraph><p>During most part of the Medieval Era, music was meant to be performed exclusively at the church, for religious purposes only.
-            The oldest musical form known to us in the West was originated inside of the enourmous and majestic cathedrals of Europe.</p></div>
-            <div class="second-paragraph"><p>Such musical form consisted of a single melody originally unaccompanied, freely sung with irregular rhythms that were generally guided by the accentuation of words and by the natural rhythm of the Latin language, which was the official language of the Catholic church.
-            This musical form became known as <i>plainchant</i> that originated what we know nowadays as <i>Gregorian Chant</i>.</p></div></div>
-          </div>
-      </section>
+            <div class="first-paragraph item">
+              <p><span class="dropcap medieval-dropcap">D</span><span class="smallcaps">uring most part of the Medieval Era,</span> music was meant to be performed exclusively at the church, for religious purposes only.<br>
+              The oldest musical form known to us in the West was originated inside of the enourmous and majestic cathedrals of Europe.
+              </p>
+            </div>
 
-        <section class="notre-dame">
-          <h3>The Notre-Dame Cathedral</h3>
-          <p>With the construction of the Notre-Dame Cathedral in 1163, Paris became an important musical hub.<br>
-          Between 1150 and 1250 a group of musicians active during this period became known as "The Notre-Dame School."<br>
-          <br>
-          The composers of the Notre-Dame school are all anonymous except for two, <i>Léonin</i> and <i>Pérotin</i>, both of whom are mentioned in a 13th-century treatise by an anonymous English scholar studying in Paris.<br>
-          These two composers are very significant to the music history because they were the first composers to write a repertory of polyphonic music, called at the time <i>organum</i>, and have it to gain international prestige and circulation.</p>
-          <figure>
-            <img src="../img/notredame.jpg" alt="A picture of The Notre-Dame Cathedral" title="Notre-Dame Cathedral">
-            <figcaption>Notre Dame de Paris, by night time, seen from the east side - by Atoma</figcaption>
-          </figure>
-        </section>
+            <div class="second-paragraph item">
+              <p>Such musical form consisted of a single melody originally unaccompanied, freely sung with irregular rhythms that were generally guided by the accentuation of words and by the natural rhythm of the Latin language, which was the official language of the Catholic church.
+              </p>
+            </div>
+            <div class="third-paragraph item">
+              <p>This musical form became known as <i>plainchant</i> that originated what we know nowadays as <i>Gregorian Chant</i>.<br>
+              You can listen to an example of <i>plainchant</i> by clicking on the player right below</p>
+              <audio controls>
+                <source src="../media/plainchant.mp3">"             
+              </audio>
+            </div>
+          </div>
 
-        <section class="composers">
-          <div class="Leonin">
-            <h2>Léonin (1135 - 1201)</h2>
-            <p>The details of Léonin’s life are not known. To him is attributed the <i>Magnus Liber Organi</i> or <i>“Great Book of Organum”</i> in English, a collection of two-voiced organum settings, notably of <i>Gradual, Alleluia,</i> and <i>Responsory</i> chants, for the complete liturgical year.<br>
-            It is known that he was the first music director of Notre-Dame from its creation until 1180, when Pérotin took over his position.</p>
+          <div class="notre-dame"> <!-- This is a flex container -->
+            <div class="text">
+              <h3>The Notre-Dame Cathedral</h3>
+              <p>With the construction of the Notre-Dame Cathedral in 1163, Paris became an important musical hub.<br>
+              Between 1150 and 1250 a group of musicians active during this period became known as "The Notre-Dame School."<br>
+              <br>
+              The composers of the Notre-Dame school are all anonymous except for two, <i>Léonin</i> and <i>Pérotin</i>, both of whom are mentioned in a 13th-century treatise by an anonymous English scholar studying in Paris.<br>
+              These two composers are very significant to the music history because they were the first composers to write a repertory of polyphonic music, called at the time <i>organum</i>, and have it to gain international prestige and circulation.</p>
+            </div>
+            <div class="notre-dame-picture">
+              <figure>
+                <img src="../img/notredame.jpg" alt="A picture of The Notre-Dame Cathedral" title="Notre-Dame Cathedral">
+                <figcaption>Notre Dame de Paris, by night time, seen from the east side - by Atoma</figcaption>
+              </figure>
+            </div>  
           </div>
-          <div class="Perotin">
-            <h2>Pérotin (1160 - 1236)</h2>
-            <p>The identity of Perotinus is largely a matter of speculation. Circumstantial evidence points to his being at Notre-Dame at the end of the 12th century and beginning of the 13th.<br>
-              In addition to revising Léonin's <i>Magnus Liber Organi</i>, Pérotin is known to have composed two extensive four-part works, <i>“Viderunt Omnes”</i> and <i>“Sederunt Omnes”</i> who are comparable in scope to cathedrals of Gothic architecture, such as Notre-Dame.</p>
-          </div>
-          <div class="image">
-            <figure>
-              <img src="../img/Perotin.jpg" alt="A picture of Perotin" title="Pérotin">
-              <figcaption> A depiction of the European composer Pérotin - Author unknown</figcaption>
-            </figure>
-          </div>
-        </section>
+
+          <section class="composers">
+            <div class="Leonin">
+              <h2>Léonin (1135 - 1201)</h2>
+              <p>The details of Léonin’s life are not known. To him is attributed the <i>Magnus Liber Organi</i> or <i>“Great Book of Organum”</i> in English, a collection of two-voiced organum settings, notably of <i>Gradual, Alleluia,</i> and <i>Responsory</i> chants, for the complete liturgical year.<br>
+              It is known that he was the first music director of Notre-Dame from its creation until 1180, when Pérotin took over his position.</p>
+            </div>
+            <div class="Perotin">
+              <h2>Pérotin (1160 - 1236)</h2>
+              <p>The identity of Perotinus is largely a matter of speculation. Circumstantial evidence points to his being at Notre-Dame at the end of the 12th century and beginning of the 13th.<br>
+                In addition to revising Léonin's <i>Magnus Liber Organi</i>, Pérotin is known to have composed two extensive four-part works, <i>“Viderunt Omnes”</i> and <i>“Sederunt Omnes”</i> who are comparable in scope to cathedrals of Gothic architecture, such as Notre-Dame.</p>
+            </div>
+            <div class="image">
+              <figure>
+                <img src="../img/Perotin.jpg" alt="A picture of Perotin" title="Pérotin">
+                <figcaption> A depiction of the European composer Pérotin - Author unknown</figcaption>
+              </figure>
+            </div>
+          </section>
+      </main>
       </div>
-    </main>
-
-    <!-- FOOTER START -->
-
-    <hr>
-    <footer class="main-footer">
-      <span><small>&copy;2018 The Music History Project - A Project for the Code Louisville Front End Development Class</small></span>
-    </footer>
+      <div class="main-footer">
+      <footer>
+        <span><small>&copy;2018 The Music History Project - A Project for the Code Louisville Front End Development Class</small></span>
+      </footer>
+    </div>
     </div>
   </body>
 </html>

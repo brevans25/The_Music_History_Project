@@ -1,116 +1,67 @@
 /* --------------------------
   Main Styles
 --------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700&subset=latin-ext');
 
-* {
-  box-sizing: border-box;
-}
-
-.main-header,
-.main-content, 
-.main-footer {
-  color: #797e83;
-  font-size: 1em;
-	margin: 0;
-  font-family: 'Cinzel', serif;
-  line-height: 1.5;
-}
-
-.main-content {
-  color: #656a6e;
-  /* background-color: rgb(87, 165, 201); */
-  padding: 40px;
-  /* border: 3px solid green; */
-}
-
-/* .main-content h1 {
-  font-size: 2em;
-} */
-
-.main-content p {
-  margin-bottom: 2em;
-}
-
-.paragraphs {
-  display: flex;
-  flex-direction: column; 
-  margin: .5em;
-}
-
-.first-paragraph,
-.second-paragraph,
-.Leonin,
-.Perotin {
-  text-align: justify;
-	padding-right: 1em;
-	padding-left: 1em;
-}
-
-figcaption {
-  font-size: .75em;
-}
-
-.main-footer {
-  /* background-color: #88FFBF; */
-  padding-top: 1em;
-  text-align: center;
-}
-
-/* --------------------------
-  Borders
---------------------------- */
-
-
-/* --------------------------
-  Flexbox Properties
---------------------------- */
-
-.notre-dame, 
-.composers,
-.intro {
+.notre-dame {
   display: flex;
   flex-direction: column;
 }
 
-.notre-dame img{
-  width: 100%;
+.first-paragraph {
+  padding-right: 1em;
 }
 
-/* .composers img {
-  align-items: center;
-} */
+.second-paragraph {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.third-paragraph {
+  padding-left: 1em;
+}
+
+.first-paragraph p {
+  margin: 0;
+}
+
+.second-paragraph p {
+  margin: 0;
+}
+
+.third-paragraph p{
+  margin: 0;
+}
+
+p + p {
+  text-indent: 2em;
+}
+
+.item {
+ margin: 1.5%;
+ flex-grow: 1;
+ flex-basis: 200px;
+}
+
 
 /* --------------------------
   Media Queries
 --------------------------- */
 
 @media (min-width: 769px) {
-  .main-content {
-    margin-top: 2em;
+
+  .medieval-title {
+    
   }
-}
+
+  .medieval-dropcap {
+    width: .75em;
+  }
+
+  .notre-dame {
+    flex-direction: row;
+  }
+
+
 
 @media (min-width: 1080px) {
-  .main-content {
-    max-width: 1300px;
-    justify-content: center;
-    margin: 3em auto;
-    width: 100%;
-  }
-
-  .intro,
-  .composers {
-    flex-direction: row;
-    height: 400px;
-  }
-
-  .paragraphs {
-    flex-direction: row;
-  }
-
-  .intro {
-    align-items: flex-end; /*align-items => align on the Cross Axis (up-down the container) => flex-end => bottom of container*/
-  }
-}
 
