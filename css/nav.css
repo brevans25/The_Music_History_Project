@@ -10,9 +10,9 @@
 }
 
 .main-header {
+  padding-top: 1em;
   /* background-color: #FFBBB9;
   border: solid 2px #FDCD15; */
-  padding-top: 1em;
   font-family: 'Cinzel', serif;
 }
 
@@ -34,7 +34,7 @@ li {
 
 .nav a {
   display: block;
-  color: #727A7C;
+  color: #333;
   font-size: 1em;
   font-weight: 300;
   text-align: center;
@@ -54,7 +54,6 @@ li {
 
 @media (min-width: 769px) {
   .main-header {
-    height: 250px;
     justify-content: flex-end;
   }
   .site-logo {

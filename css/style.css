@@ -3,6 +3,7 @@
 --------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC');
 
 
 * {
@@ -12,25 +13,38 @@
 /* --------------------------
   Main Styles
 --------------------------- */
+html {
+  height: 100%;
+  background-color: #fafafa;
+}
 
 body {
-  color: #797e83;
+  color: #333;
   font-size: 1.25rem;
   line-height: 1.5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-}
 .main {
   display: flex;
-  color: #797e83;
 	margin: 0;
   font-family: 'Alegreya', serif;
   line-height: 1.5;
 }
 
+.wrap {
+  flex: 1 0 auto;
+}
+.main-footer {
+  flex-shrink: 0;
+}
+
+
 .subtitle {
   font-family: 'Cinzel', serif;
-  font-size: 1.425em;
+  font-size: 1.425rem;
 }
 
 .paragraphs {
@@ -38,22 +52,41 @@ body {
   flex-direction: column; 
 }
 
+.smallcaps {
+  font-family: 'Alegreya SC', 'Alegreya', 'Arial', serif;
+}
+
+.dropcap {
+  font-size: 4em;
+  float: left;
+  width: .5em;
+  height: .7em;
+  line-height: 0.8;
+  margin: 0;
+}
+
 .invitation { 
-  color: #797e83;
-  font-size: 1.425em;
+  padding: 0 3em;
+  color: #333;
+  text-align: center;
+  font-size: 1.425rem;
   font-family: 'Cinzel', serif;
   font-weight: normal;
   text-decoration: none;
-  align-self: center;
+
 }
 
 .invitation:hover {
-  color: #2E2E30;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
   border-bottom: 1px solid #F79E2A;
 }
 
 .main-footer {
-  padding-top: 1em;
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Cinzel', serif;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -62,10 +95,18 @@ body {
   --------------------------- */
 
   @media (min-width: 769px) {
+    
+  main {
+    margin-top: 3em;
+  }
+  
   main {
     flex-direction: row;
-    margin-top: 3em;
-    align-items: flex-end;
+    max-width: 81.25rem;
+    justify-content: center;
+    margin: 3em auto;
+    margin-bottom: 0;
+    margin-top: 1rem;
     width: 100%;
   }
 
@@ -77,13 +118,7 @@ body {
 }
 
   @media (min-width: 1080px) {
-  main {
-    max-width: 1300px;
-    justify-content: center;
-    margin: 3em auto;
-    margin-top: 1rem;
-    width: 100%;
-  }
+
 
   .title {
     font-family: 'Cinzel', serif;
@@ -91,14 +126,17 @@ body {
     font-weight: normal;
     line-height: 1.2;
     margin-bottom: 0;
+    padding: 0 2%;
+    margin-top: .85em;
     /* background-color: #A2E8B0;
     border: solid 2px #FB005A; */
-}
+  }
 
   .subtitle {
     font-family: 'Cinzel', serif;
-    font-size: 1.414rem;
+    font-size: 1.413rem;
     font-weight: normal;
+    padding: 0 2%;
     line-height: 1.4;
     /* background-color: #DFFFB4;
     border: solid 2px #7D3892; */
@@ -115,21 +153,29 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     /* background-color: #FFF1B9;
-    border: solid 2px #007BFD;*/
+    border: solid 2px #007BFD; */
   } 
-  
-  .first-paragraph,
-  .second-paragraph,
-  .invitation {
-    border: dashed 2px #E4874B;
+
+
+  .first-paragraph {
+    padding-right: 2em;
   }
 
-.invitation {
-  align-self: flex-end;
-}
+  .first-paragraph p {
+    margin: 0;
+  }
 
+  .second-paragraph p {
+    margin: 0 0 1.85rem 0;
+  }
+
+  p + p {
+    text-indent: 2em;
+  }
+  
   .item {
    margin: 1%;
    flex-grow: 1;
    flex-basis: 200px;
   }
+}
