@@ -32,7 +32,7 @@
   margin: 0;
 }
 
-p + p {
+p + span  {
   text-indent: 2em;
 }
 
@@ -49,10 +49,6 @@ p + p {
 
 @media (min-width: 769px) {
 
-  .medieval-title {
-    
-  }
-
   .medieval-dropcap {
     width: .75em;
   }
@@ -65,3 +61,5 @@ p + p {
 
 @media (min-width: 1080px) {
 
+}
+}
