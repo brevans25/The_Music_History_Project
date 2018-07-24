@@ -1,4 +1,4 @@
-$('#confirmation').hide();
+$('#nameRequest, #emailRequest, #confirmation').hide();
 
 //When ENTER is pressed OR mouse focus on next field...
 //Log user name to console
@@ -30,12 +30,32 @@ var name = $('#name').val();
 var email = $('#email').val();
 var comment = $('#comment').val();
 
-// const $email = $('#email').val;
-// const $comment = $('#comment').val;
-    if (name === ""||email === "" || comment === "" ) {
-        alert('');
-        e.preventDefault();
-    } else {
+const $email = $('#email').val;
+const $comment = $('#comment').val;
+//     if (name === ""|| email === "" || comment === "" ) {
+//         alert('');
+//         e.preventDefault();
+//     } else {
+//     $('#userName').text(name.toUpperCase());
+//     $('#confirmation').slideDown(1000);
+//     $('#confirmation').delay(15000);
+//     $('#confirmation').slideUp();
+//     }
+// });
+
+
+
+if (name === "") {
+    $('#nameRequest').slideDown(1000);
+    $('#nameRequest').delay(15000);
+    $('#nameRequest').slideUp();
+    e.preventDefault();
+} else if ( email === "") {
+    $('#emailRequest').slideDown(1000);
+    $('#emailRequest').delay(15000);
+    $('#emailRequest').slideUp();
+    e.preventDefault();
+ } else {
     $('#userName').text(name.toUpperCase());
     $('#confirmation').slideDown(1000);
     $('#confirmation').delay(15000);

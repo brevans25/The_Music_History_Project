@@ -65,12 +65,13 @@ p + p {
 }
 
   @media (min-width: 1080px) {
-
+    
+    /* .vertical-rhythm {
+      padding-top: 1.25em;
+    } */
     .invitation { 
       padding: 0 3em;
-     
       text-align: center;
       font-size: 1.425rem;
-
-
+  }
 }
