@@ -7,23 +7,11 @@
   box-sizing: border-box;
 }
 
-.main-header,
-.main-content,
-.main-footer {
-  color: #797e83;
-  font-size: 1em;
-  margin: 0;
-  font-family: 'Cinzel', serif;
-  line-height: 1.5;
-}
-
-.main-content {
-  color: #656a6e;
-}
-
  .info {
+  font-family: 'Cinzel', serif;
+  font-weight: normal;
   align-items: center;
-  color: #797e83;
+  color: #333;
   font-size: 2em;
   text-decoration: none;
   padding: .2em;
@@ -62,7 +50,6 @@
 
 .main-content div img {
   width: 100%;
-  height: auto;
 }
 
 img {
@@ -108,11 +95,11 @@ img {
   position: relative;
 }
 
-info:hover {
+/* info:hover {
    -webkit-box-shadow: 0 0 5px #000;
    -moz-box-shadow: 0 0 5px #000;
    box-shadow: 0 0 5px #000;
-}
+} */
 
 /* --------------------------
   Transitions Styles
@@ -192,7 +179,7 @@ info:hover {
   
 
 
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
     .main-content {
       flex-direction: row;
       margin-top: 2em;
@@ -212,4 +199,4 @@ info:hover {
     margin: 3em auto;
     margin-top: 2em;
     width: 100%;
-    }
+    } */

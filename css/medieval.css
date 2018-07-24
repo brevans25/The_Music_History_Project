@@ -2,11 +2,6 @@
   Main Styles
 --------------------------- */
 
-.notre-dame {
-  display: flex;
-  flex-direction: column;
-}
-
 .first-paragraph {
   padding-right: 1em;
 }
@@ -32,15 +27,21 @@
   margin: 0;
 }
 
-p + span  {
-  text-indent: 2em;
-}
-
 .item {
  margin: 1.5%;
  flex-grow: 1;
  flex-basis: 200px;
 }
+
+
+.notre-dame {
+  display: flex;
+  max-height: 81.25rem;
+  flex-direction: column;
+  /* border: solid 2px violet; */
+  align-items: flex-start
+}
+
 
 
 /* --------------------------
@@ -49,17 +50,67 @@ p + span  {
 
 @media (min-width: 769px) {
 
-  .medieval-dropcap {
-    width: .75em;
-  }
+  
 
   .notre-dame {
     flex-direction: row;
   }
 
+  .notre-dame-title {
+    margin-top: .75em;
+  }
 
+  .text {
+    width: 85%;
+    line-height: 1.6;
+    /* background-color: #f0aa6abf;
+    border: dashed 2px slategray; */
+    margin-right: 1em;
+  }
+
+  .first {
+    margin-top: 1.5rem
+  }
+  
+  .second {
+    margin-top: 2rem;
+  }
+
+  .third {
+    margin-top: 2rem;
+  }
+
+  .notre-dame-picture {
+    margin: auto;
+    max-height: 500px;
+    padding-left: 2em;
+    
+  }
+
+  .notre-dame-picture img {
+    max-width: 87%;
+    height: auto;
+  }
+
+  figure {
+    padding: 0 1em;
+  }
+
+  figcaption {
+    font-size: 0.707em;
+    padding-top: 0;
+    
+  }
+}
+ 
 
 @media (min-width: 1080px) {
 
-}
+  .medieval-dropcap {
+    width: .75em;
+  }
+  
+  .notre-dame-dropcap {
+    width: 1em;
+  }
 }

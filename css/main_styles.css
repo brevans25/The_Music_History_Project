@@ -14,39 +14,48 @@ Web Fonts
 }
 
 html {
+  /* background-image: url(http://basehold.it/i/32); */
   height: 100%;
-  background-color: #FCFCFC;
+  /* background-color: #FCFCFC;  white desired background */
+  background-color: #F5ECA6;
+  color: #333;
 }
 
 body {
-  color: #333;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.subtitle {
+.title,
+.subtitle,
+h2 {
   font-family: 'Cinzel', serif;
+  font-weight: normal;
+}
+  .title,
+  .subtitle {
+    margin-bottom: 0;
+    padding: 0 2%;
+    margin-top: .85em;
+    text-align: center;
+  }
+
+.subtitle {
   font-size: 1.425rem;
 }
 
 h2 {
-  font-family: 'Cinzel', serif;
   font-size: 1.999em;
-  font-weight: normal;
 }
 
 
 .paragraphs {
   display: flex;
   flex-direction: column; 
-}
-
-
-.smallcaps {
-  font-family: 'Alegreya SC', 'Alegreya', 'Arial', serif;
+  padding: 3%;
 }
 
 .dropcap {
@@ -58,9 +67,12 @@ h2 {
   margin: 0;
 }
 
+
 /* --------------------------
  Nav Bar Styles
 --------------------------- */
+
+
 
 .container,
 .nav {
@@ -110,7 +122,7 @@ li {
   display: flex;
 	margin: 0;
   font-family: 'Alegreya', serif;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .wrap {
@@ -122,26 +134,22 @@ li {
 --------------------------- */
 
 .main-footer {
-  flex-shrink: 0;
-}
-
-.main-footer {
   color: #333;
   font-size: 1rem;
   font-family: 'Cinzel', serif;
   font-weight: normal;
   text-align: center;
+  flex-shrink: 0;
 }
 
 /* --------------------------
   Media Queries
 --------------------------- */
 
-@media (min-width: 769px) {
+@media (min-width: 48.0626em) { /*Using ems instead of pixels to facilitate responsive typography. 769px is equals 48.0625ems*/
 
-
-  main {
-    margin-top: 3em;
+  html {
+    background-color: bisque;
   }
   
   main {
@@ -157,6 +165,15 @@ li {
   .paragraphs {
     flex-direction: row;
   }
+
+  .title, 
+  .subtitle {
+    text-align: left;
+  }
+
+  .smallcaps {
+    font-family: 'Alegreya SC', 'Alegreya', 'Arial', serif;
+  }  
 
   .main-header {
     justify-content: flex-end;
@@ -174,26 +191,23 @@ li {
   }
 }
 
-@media (min-width: 1080px) {
+
+@media (min-width: 67.5em) { /*Using ems instead of pixels to facilitate responsive typography. 1080px is equals 67.5ems*/
+
+  html {
+    background-color: azure;
+  }
 
 
   .title {
-    font-family: 'Cinzel', serif;
-    font-size: 2.827rem;
-    font-weight: normal;
+    font-size: 2.827em;
     line-height: 1.2;
-    margin-bottom: 0;
-    padding: 0 2%;
-    margin-top: .85em;
     /* background-color: #A2E8B0;
     border: solid 2px #FB005A; */
   }
 
   .subtitle {
-    font-family: 'Cinzel', serif;
-    font-size: 1.413rem;
-    font-weight: normal;
-    padding: 0 2%;
+    font-size: 1.413em;
     line-height: 1.4;
     /* background-color: #DFFFB4;
     border: solid 2px #7D3892; */
@@ -206,12 +220,13 @@ li {
     line-height: 1.6;
     text-align: justify;
     margin-top: 1em;
-    padding: 2%;
+    padding: 1%;
     align-items: flex-start;
     flex-wrap: wrap;
     /* background-color: #FFF1B9;
     border: solid 2px #007BFD; */
   } 
+
 
   
   /* --------------------------

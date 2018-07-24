@@ -1,39 +1,33 @@
 /* --------------------------
   Main Styles
 --------------------------- */
-
-.first-paragraph {
-  padding-right: 2em;
-}
-
-.first-paragraph p {
+.first-paragraph p,
+.second-paragraph p {
   margin: 0;
 }
 
-.second-paragraph p {
-  margin: 0 0 1.85rem 0;
+.second-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-indent: 2em;
 }
 
 p + p {
   text-indent: 2em;
 }
 
-.item {
- margin: 1.5%;
- flex-grow: 1;
- flex-basis:200px;
-}
 
-
-.invitation { 
-  padding: 0 3em;
-  color: #333;
-  text-align: center;
-  font-size: 1.425rem;
+.invitation {
   font-family: 'Cinzel', serif;
+  color: #333;
   font-weight: normal;
+  font-size: 1.25rem;
+  text-align: center;
   text-decoration: none;
-
+  padding: 0 3em;
+  margin-top: 2em;
+  align-self: center;
 }
 
 .invitation:hover {
@@ -49,12 +43,34 @@ p + p {
   --------------------------- */
 
   @media (min-width: 769px) {
-    
+
+    .item {
+      margin: 1.5%;
+      flex-grow: 1;
+      flex-basis:200px;
+     }
+
+    .first-paragraph {
+      padding-right: 2em;
+}
+
+    .first-paragraph p {
+      margin: 0;
+    }
+
+    .second-paragraph p {
+      margin: 0 0 1.85rem 0;
+    }
 
 }
 
   @media (min-width: 1080px) {
 
+    .invitation { 
+      padding: 0 3em;
+     
+      text-align: center;
+      font-size: 1.425rem;
 
 
 }
