@@ -22,11 +22,6 @@
   border-bottom: 1px solid #F79E2A;
 }
 
-.main-footer {
-  padding-top: 1em;
-  text-align: center;
-}
-
 /* --------------------------
   Photo Gallery Styles
 --------------------------- */
@@ -179,12 +174,17 @@ img {
   
 
 
-/* @media (min-width: 769px) {
+ @media (min-width: 769px) {
+    .wrap {
+      justify-content: center;
+    }
+
     .main-content {
       flex-direction: row;
       margin-top: 2em;
       align-items: flex-end;
       width: 100%;
+      align-self: center;
     }
 
   .view {
@@ -199,4 +199,4 @@ img {
     margin: 3em auto;
     margin-top: 2em;
     width: 100%;
-    } */
+    } 
