@@ -4,15 +4,16 @@
 
 .item {
  margin: .5em;
- flex-grow: 1;
- flex-basis: 200px;
+ flex: 1;
 }
 
 .text {
   display: flex;
   flex-direction: column;
   font-family: 'Alegreya', serif;
-  margin: 0;
+  margin-left: 2em;
+  font-size: 1.10rem;
+  text-align: justify;
 }
 
 .dropcap-D {
@@ -28,7 +29,7 @@
 .dropcap-W {
   font-size: 4em;
   float: left;
-  width: .5em;
+  width: .7em;
   height: .7em;
   line-height: 0.8;
   margin: 0;
@@ -36,14 +37,24 @@
   display: block;
 }
 
-.notre-dame {
+.composers {
   display: flex;
-  max-height: 81.25rem;
   flex-direction: column;
-  align-items: flex-start;
+  text-align: justify;
+}
+.composers-subtitle {
+  color: firebrick;
+}
+.first-column,
+.second-column,
+.third-column {
+  flex-direction: column;
 }
 
-
+.second-column p.second {
+  margin: 0;
+  padding-top: 0;
+}
 
 /* --------------------------
   Media Queries
@@ -64,48 +75,86 @@
     padding-left: 1em;
   }
 
-  .notre-dame {
-    flex-direction: row;
+  .text,
+  .picture {
+    max-width: 45%;
+  }
+
+  .text{
+    float: left;
+  }
+
+  .picture {
+    float: right;
+  } 
+
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .picture img {
+    max-width: 65%;
+    height: auto;
   }
 
   .text p {
     font-size: 1.25rem;
-    width: 85%;
     line-height: 1.6;
-    margin: 0
+    margin: 0;
+
   }
 
   .text p + p {
     text-indent: 2em;
   }
 
-
-
-  .notre-dame-picture {
-    margin: auto;
-    max-height: 500px;
-    padding-left: 2em;
-    
-  }
-
-  .notre-dame-picture img {
-    max-width: 87%;
-    height: auto;
-  }
-
-  figure {
-    padding: 0 1em;
-  }
-
   figcaption {
     font-size: 0.707em;
     padding-top: 0;
-    
   }
+
+  .first-column,
+  .second-column,
+  .third-column {
+    flex-direction: row;
+  }
+
+
+.composers {
+  flex-direction: row;
+}
+
+
+.composers p {
+  font-size: 1.10rem;
+  padding-right: 2rem;
+  margin: 0;
+  margin-top: 1.5em;
+}
+
+p + p {
+  text-indent: 2em;
 }
  
 
 @media (min-width: 1080px) {
+  
+.text {
+  font-size: 1.25rem;
+}
+.composers p {
+  font-size: 1.25rem;
+  padding-right: 4rem;
+}
 
+  figure {
+    margin: 0;
+  }
+
+  .second {
+    padding-top: 0 !;
+  }
 
 }

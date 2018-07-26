@@ -29,9 +29,7 @@
   justify-content: center;
   text-indent: 2em;
 }
-.second {
-  padding-top: 0 !;
-}
+
 
 p + p {
   text-indent: 2em;
@@ -46,7 +44,6 @@ p + p {
   text-align: center;
   text-decoration: none;
   padding: 0 3em;
-  margin-top: 2em;
   align-self: center;
 }
 
@@ -67,7 +64,7 @@ p + p {
     .item {
       margin: 1.5%;
       flex-grow: 1;
-      flex-basis:200px;
+      flex-basis: 200px;
      }
 
     .first-paragraph {
@@ -77,14 +74,16 @@ p + p {
 }
 
   @media (min-width: 1080px) {
-    
-    /* .vertical-rhythm {
-      padding-top: 1.25em;
-    } */
+
     .invitation { 
       padding: 0 3em;
       margin-top: 2.75em;
       text-align: center;
       font-size: 1.425rem;
   }
-}
+
+    .second {
+      padding-top: 0 !;
+    }
+  }
+

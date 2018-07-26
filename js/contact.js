@@ -32,18 +32,8 @@ var comment = $('#comment').val();
 
 const $email = $('#email').val;
 const $comment = $('#comment').val;
-//     if (name === ""|| email === "" || comment === "" ) {
-//         alert('');
-//         e.preventDefault();
-//     } else {
-//     $('#userName').text(name.toUpperCase());
-//     $('#confirmation').slideDown(1000);
-//     $('#confirmation').delay(15000);
-//     $('#confirmation').slideUp();
-//     }
-// });
 
-
+//Conditional Statements => notifies the users if they do not provide name or email by showing a button that slides down
 
 if (name === "") {
     $('#nameRequest').slideDown(1000);

@@ -14,16 +14,16 @@ Web Fonts
 }
 
 html {
-  background-image: url(http://basehold.it/i/32);
+  /* background-image: url(http://basehold.it/i/32); */
   height: 100%;
-  /*background-color: #FCFCFC;  white desired background*/
+  background-color: #FCFCFC;
   background-color: #F5ECA6;
   color: #333;
 }
 
 body {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -42,12 +42,11 @@ body {
   margin-bottom: 0;
   padding: 0 2%;
   margin-top: .85em;
-  text-align: center;
 }
 
 .small-title {
   font-size: 1.999em;
-  margin-top: .4em;
+  margin: .3em 0 .75em 1em;
 }
 
 
@@ -55,6 +54,7 @@ body {
   display: flex;
   flex-direction: column; 
   padding: 3%;
+  font-size: 1.10rem;
 }
 
 
@@ -144,7 +144,6 @@ li {
     max-width: 81.25rem;
     justify-content: center;
     margin: 3em auto;
-    margin-bottom: 0;
     margin-top: 1rem;
     width: 100%;
   }
@@ -156,15 +155,11 @@ li {
   .title {
     font-size: 1.999rem;
     line-height: 1.2;
-    /* background-color: #A2E8B0;
-    border: solid 2px #FB005A; */
   }
 
   .subtitle {
     font-size: 1.413em;
     line-height: 1.4;
-    /* background-color: #DFFFB4;
-    border: solid 2px #7D3892; */
   }
 
   .title, 
@@ -203,7 +198,7 @@ li {
 
   .title {
     font-size: 2.827em;
-    line-height: 1.1;
+    line-height: 1.07;
     padding-top: .10em;
   }
 
@@ -223,8 +218,6 @@ li {
     padding: 1%;
     align-items: flex-start;
     flex-wrap: wrap;
-    /* background-color: #FFF1B9;
-    border: solid 2px #007BFD; */
   } 
 
 
