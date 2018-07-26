@@ -14,9 +14,9 @@ Web Fonts
 }
 
 html {
-  background-image: url(http://basehold.it/i/32); */
+  background-image: url(http://basehold.it/i/32);
   height: 100%;
-  /* background-color: #FCFCFC;  white desired background */
+  /*background-color: #FCFCFC;  white desired background*/
   background-color: #F5ECA6;
   color: #333;
 }
@@ -35,21 +35,19 @@ body {
   font-family: 'Cinzel', serif;
   font-weight: normal;
 }
-  .title,
-  .subtitle {
-    margin-bottom: 0;
-    padding: 0 2%;
-    margin-top: .85em;
-    text-align: center;
-  }
 
 .title,
 .subtitle {
   font-size: 1.15rem;
+  margin-bottom: 0;
+  padding: 0 2%;
+  margin-top: .85em;
+  text-align: center;
 }
 
-h2 {
+.small-title {
   font-size: 1.999em;
+  margin-top: .4em;
 }
 
 
@@ -57,15 +55,6 @@ h2 {
   display: flex;
   flex-direction: column; 
   padding: 3%;
-}
-
-.dropcap {
-  font-size: 4em;
-  float: left;
-  width: .5em;
-  height: .7em;
-  line-height: 0.8;
-  margin: 0;
 }
 
 
@@ -214,16 +203,14 @@ li {
 
   .title {
     font-size: 2.827em;
-    line-height: 1.2;
-    /* background-color: #A2E8B0;
-    border: solid 2px #FB005A; */
+    line-height: 1.1;
+    padding-top: .10em;
   }
 
   .subtitle {
     font-size: 1.413em;
     line-height: 1.4;
-    /* background-color: #DFFFB4;
-    border: solid 2px #7D3892; */
+    padding-bottom: .15em;
   }
 
   .paragraphs {

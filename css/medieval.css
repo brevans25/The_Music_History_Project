@@ -2,44 +2,45 @@
   Main Styles
 --------------------------- */
 
-.first-paragraph {
-  padding-right: 1em;
-}
-
-.second-paragraph {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.third-paragraph {
-  padding-left: 1em;
-}
-
-.first-paragraph p {
-  margin: 0;
-}
-
-.second-paragraph p {
-  margin: 0;
-}
-
-.third-paragraph p{
-  margin: 0;
-}
-
 .item {
- margin: 1.5%;
+ margin: .5em;
  flex-grow: 1;
  flex-basis: 200px;
 }
 
+.text {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Alegreya', serif;
+  margin: 0;
+}
+
+.dropcap-D {
+  font-size: 4em;
+  float: left;
+  width: .7em;
+  height: .7em;
+  line-height: 0.8;
+  margin: 0;
+  display: block;
+}
+
+.dropcap-W {
+  font-size: 4em;
+  float: left;
+  width: .5em;
+  height: .7em;
+  line-height: 0.8;
+  margin: 0;
+  margin-right: .3em;
+  display: block;
+}
 
 .notre-dame {
   display: flex;
   max-height: 81.25rem;
   flex-direction: column;
-  /* border: solid 2px violet; */
-  align-items: flex-start
+  align-items: flex-start;
 }
 
 
@@ -50,31 +51,35 @@
 
 @media (min-width: 769px) {
 
+  .first-paragraph {
+    padding-right: 1em;
+  }
   
+  .second-paragraph {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  .third-paragraph {
+    padding-left: 1em;
+  }
 
   .notre-dame {
     flex-direction: row;
   }
 
-  .text {
+  .text p {
+    font-size: 1.25rem;
     width: 85%;
     line-height: 1.6;
-    /* background-color: #f0aa6abf;
-    border: dashed 2px slategray; */
-    margin-right: 1em;
+    margin: 0
   }
 
-  .first {
-    margin-top: 1.5rem
-  }
-  
-  .second {
-    margin-top: 2rem;
+  .text p + p {
+    text-indent: 2em;
   }
 
-  .third {
-    margin-top: 2rem;
-  }
+
 
   .notre-dame-picture {
     margin: auto;
@@ -102,11 +107,5 @@
 
 @media (min-width: 1080px) {
 
-  .medieval-dropcap {
-    width: .75em;
-  }
-  
-  .notre-dame-dropcap {
-    width: 1em;
-  }
+
 }
