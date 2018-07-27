@@ -54,7 +54,7 @@ p + p {
 }
 
 .invitation:hover {
-  color: rgb(0, 0, 0);
+  color: #000;
   font-weight: 500;
   border-bottom: 1px solid #F79E2A;
 }
