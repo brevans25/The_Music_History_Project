@@ -1,0 +1,43 @@
+/* --------------------------
+  Main Styles
+--------------------------- */
+
+* {
+    box-sizing: border-box;
+  }
+
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    color: #333;
+    font-weight: normal;
+    font-size: 1.75em;
+    text-align: center;
+    padding: 10%;
+}
+
+.coming-soon h1 {
+    align-self: center;
+}
+
+
+/* --------------------------
+ Media Queries
+--------------------------- */
+@media(min-width: 48.0625em) {
+
+    .coming-soon {
+        font-size: 2em;
+    }
+
+}
+
+
+@media(min-width: 67.5em) {
+
+    .coming-soon {
+        font-size: 2.75em;
+    }
+
+}

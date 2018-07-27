@@ -55,6 +55,17 @@ body {
   font-size: 1.10rem;
 }
 
+.main {
+  display: flex;
+	margin: 0;
+  font-family: 'Alegreya', serif;
+  line-height: 1.6;
+}
+
+.wrap {
+  flex: 1 0 auto;
+}
+
 
 /* --------------------------
  Nav Bar Styles
@@ -103,16 +114,6 @@ li {
   border-bottom-color: #F79E2A;
 }
 
-.main {
-  display: flex;
-	margin: 0;
-  font-family: 'Alegreya', serif;
-  line-height: 1.6;
-}
-
-.wrap {
-  flex: 1 0 auto;
-}
 
 /* --------------------------
   Footer
@@ -232,8 +233,8 @@ li {
   }
 
   .nav li {
-    margin-left: .65em;
-    margin-right: .65em
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
 

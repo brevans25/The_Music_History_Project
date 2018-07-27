@@ -2,6 +2,11 @@
   Main Styles
 --------------------------- */
 
+* {
+  box-sizing: border-box;
+}
+
+
 .dropcap-I {
   font-size: 4em;
   float: left;
@@ -26,7 +31,7 @@
 .second-paragraph {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-indent: 2em;
 }
 

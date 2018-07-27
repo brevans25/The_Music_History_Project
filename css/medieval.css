@@ -2,6 +2,10 @@
   Main Styles
 --------------------------- */
 
+* {
+  box-sizing: border-box;
+}
+
 .item {
  margin: 0;
  flex: 1;
@@ -161,6 +165,7 @@ figure {
 
 .third-column > .maintitle {
   display: block;
+  }
 }
 
 @media (min-width: 1080px) {
@@ -172,7 +177,6 @@ figure {
   font-size: 1.25rem;
   padding-right: 4rem;
 }
-
 
   .second {
     padding-top: 0 !;
