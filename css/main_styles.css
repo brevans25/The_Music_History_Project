@@ -14,10 +14,8 @@ Web Fonts
 }
 
 html {
-  /* background-image: url(http://basehold.it/i/32); */
   height: 100%;
   background-color: #FCFCFC;
-  background-color: #F5ECA6;
   color: #333;
 }
 
@@ -135,10 +133,6 @@ li {
 
 @media (min-width: 48.0626em) { /*Using ems instead of pixels to facilitate responsive typography. 769px is equals 48.0625ems*/
 
-  html {
-    background-color: bisque;
-  }
-  
   main {
     flex-direction: row;
     max-width: 81.25rem;
@@ -191,10 +185,6 @@ li {
 
 
 @media (min-width: 67.5em) { /*Using ems instead of pixels to facilitate responsive typography. 1080px is equals 67.5ems*/
-
-  html {
-    background-color: azure;
-  }
 
   .title {
     font-size: 2.827em;

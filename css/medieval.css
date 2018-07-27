@@ -3,8 +3,12 @@
 --------------------------- */
 
 .item {
- margin: .5em;
+ margin: 0;
  flex: 1;
+}
+
+paragraphs p {
+  margin-top: 0;
 }
 
 .text {
@@ -36,6 +40,12 @@
   margin-right: .3em;
   display: block;
 }
+.responsive {
+  width: 100%;
+}
+.maintitle {
+  height: 100px;
+}
 
 .composers {
   display: flex;
@@ -45,10 +55,12 @@
 .composers-subtitle {
   color: firebrick;
 }
+
 .first-column,
 .second-column,
 .third-column {
   flex-direction: column;
+  margin: 4%;
 }
 
 .second-column p.second {
@@ -56,6 +68,9 @@
   padding-top: 0;
 }
 
+.third-column > .maintitle {
+  display: none;
+}
 /* --------------------------
   Media Queries
 --------------------------- */
@@ -86,6 +101,8 @@
 
   .picture {
     float: right;
+    margin: 0 2% 2%;
+    width: 46%;
   } 
 
   .group:after {
@@ -95,7 +112,7 @@
   }
 
   .picture img {
-    max-width: 65%;
+    max-width: 100%;
     height: auto;
   }
 
@@ -118,7 +135,8 @@
   .first-column,
   .second-column,
   .third-column {
-    flex-direction: row;
+    flex-direction: column;
+    margin: 2%;
   }
 
 
@@ -131,13 +149,19 @@
   font-size: 1.10rem;
   padding-right: 2rem;
   margin: 0;
-  margin-top: 1.5em;
 }
 
 p + p {
   text-indent: 2em;
 }
- 
+
+figure {
+  margin: auto;
+}
+
+.third-column > .maintitle {
+  display: block;
+}
 
 @media (min-width: 1080px) {
   
@@ -149,12 +173,12 @@ p + p {
   padding-right: 4rem;
 }
 
-  figure {
-    margin: 0;
-  }
 
   .second {
     padding-top: 0 !;
   }
 
+  .text p {
+    margin-bottom: 2em;
+  }
 }
